@@ -23,7 +23,7 @@ class ThuongHieuController extends Controller
     {
     	$this->validate($request, 
     		['ten'=>'required|min:2|max:100'], 
-    		['ten.required'=>'Bạn chưa nhập tên nhà sản xuất',
+    		['ten.required'=>'Bạn chưa nhập tên thương hiệu',
     		 'ten.min'=>'Tên nhà sản xuất phải có độ dài từ 2 đến 100 ký tự',
     		 'ten.max'=>'Tên nhà sản xuất phải có độ dài từ 2 đến 100 ký tự']);
     	$thuonghieu = new ThuongHieu;
@@ -59,7 +59,7 @@ class ThuongHieuController extends Controller
     	$thuonghieu = ThuongHieu::find($id);
     	$this->validate($request, 
     		['ten'=>'required|min:2|max:100'], 
-    		['ten.required'=>'Bạn chưa nhập tên nhà sản xuất',
+    		['ten.required'=>'Bạn chưa nhập tên thương hiệu',
     		 'ten.min'=>'Tên nhà sản xuất phải có độ dài từ 2 đến 100 ký tự',
     		 'ten.max'=>'Tên nhà sản xuất phải có độ dài từ 2 đến 100 ký tự']);
     	$thuonghieu->tenth = $request->ten;

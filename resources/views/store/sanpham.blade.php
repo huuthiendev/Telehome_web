@@ -20,9 +20,7 @@
 					<h3>Loại sản phẩm</h3>
 					<ul class="cate">
 					@foreach($dsloaisp as $item)
-						@if($item -> maloaicha != null)
-							<li><a href="loaisanpham/{{$item -> id}}">{{$item -> tenloaisp}}</a></li>
-						@endif
+						<li><a href="loaisanpham/{{$item -> id}}">{{$item -> tenloaisp}}</a></li>
 					@endforeach
 					</ul>
 				</div>

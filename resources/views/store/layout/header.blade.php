@@ -48,14 +48,12 @@
 								<ul class="dropdown-menu multi-column columns-3">
 									<div class="row">
 										@foreach($dsloaisp as $item)
-											@if($item -> maloaicha != null)
-												<div class="col-sm-4">
-													<ul class="multi-column-dropdown">
-														<h6>{{$item -> tenloaisp}}</h6>
-														<li><a href="loaisanpham/{{$item -> id}}"><img src="{{$item -> hinhloaisp}}" width="150" height="150" style="padding-bottom: 10px"></a></li>
-													</ul>
-												</div>
-											@endif
+											<div class="col-sm-4">
+												<ul class="multi-column-dropdown">
+													<h6>{{$item -> tenloaisp}}</h6>
+													<li><a href="loaisanpham/{{$item -> id}}"><img src="{{$item -> hinhloaisp}}" width="150" height="150" style="padding-bottom: 10px"></a></li>
+												</ul>
+											</div>
 										@endforeach
 										<div class="clearfix"></div>
 									</div>

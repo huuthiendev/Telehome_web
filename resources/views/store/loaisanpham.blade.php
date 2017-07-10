@@ -18,9 +18,7 @@
 					<h3>Loại sản phẩm</h3>
 					<ul class="cate">
 					@foreach($dsloaisp as $item)
-						@if($item -> maloaicha != null)
-							<li><a href="loaisanpham/{{$item -> id}}">{{$item -> tenloaisp}}</a></li>
-						@endif
+						<li><a href="loaisanpham/{{$item -> id}}">{{$item -> tenloaisp}}</a></li>
 					@endforeach
 					</ul>
 				</div><br>
@@ -34,11 +32,6 @@
 				</div>
 			</div>
 			<div class="col-md-8 products-right">
-				<div class="products-right-grid">
-					<div class="products-right-grids-position animated wow slideInRight" data-wow-delay=".5s">
-						<img src="images/banner.jpg" alt=" " class="img-responsive" />
-					</div>
-				</div>
 				<div class="products-right-grids-bottom">
 					@foreach($dssanpham as $item)
 						<div class="col-md-4 products-right-grids-bottom-grid">

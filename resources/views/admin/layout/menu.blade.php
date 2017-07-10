@@ -40,7 +40,7 @@
                 <!-- /.nav-second-level -->
             </li>
             <li>
-                <a href="#"><i class="fa fa-users fa-fw"></i> Thương hiệu<span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-building-o fa-fw"></i> Thương hiệu<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
                         <a href="admin/thuonghieu/danhsach">Danh sách thương hiệu</a>
@@ -65,6 +65,24 @@
                     </li>
                     <li>
                         <a href="admin/loainguoidung/them">Thêm loại người dùng</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li>
+                <a href="#"><i class="fa fa fa-gift fa-fw"></i> Khuyến mãi<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="admin/khuyenmai/danhsach">Danh sách khuyến mãi</a>
+                    </li>
+                    <li>
+                        <a href="admin/khuyenmai/them">Thêm khuyến mãi</a>
+                    </li>
+                    <li>
+                        <a href="admin/chitietkhuyenmai/danhsach">Danh sách chi tiết khuyến mãi</a>
+                    </li>
+                    <li>
+                        <a href="admin/chitietkhuyenmai/them">Thêm chi tiết khuyến mãi</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->

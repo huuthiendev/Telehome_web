@@ -159,6 +159,34 @@ Route::group(['prefix'=>'admin', 'middleware'=>'adminLogin'], function() {
 
         Route::get('xoa/{id}','HoaDonController@getXoa');
     });
+
+    Route::group(['prefix'=>'khuyenmai'], function() {
+        Route::get('danhsach','KhuyenMaiController@getDanhSach');
+
+        Route::get('capnhat/{id}','KhuyenMaiController@getCapNhat');
+
+        Route::post('capnhat/{id}','KhuyenMaiController@postCapNhat');
+
+        Route::get('them','KhuyenMaiController@getThem');
+
+        Route::post('them','KhuyenMaiController@postThem');
+
+        Route::get('xoa/{id}','KhuyenMaiController@getXoa');
+    });
+
+    Route::group(['prefix'=>'chitietkhuyenmai'], function() {
+        Route::get('danhsach','ChiTietKhuyenMaiController@getDanhSach');
+
+        Route::get('capnhat/{id}','ChiTietKhuyenMaiController@getCapNhat');
+
+        Route::post('capnhat/{id}','ChiTietKhuyenMaiController@postCapNhat');
+
+        Route::get('them','ChiTietKhuyenMaiController@getThem');
+
+        Route::post('them','ChiTietKhuyenMaiController@postThem');
+
+        Route::get('xoa/{id}','ChiTietKhuyenMaiController@getXoa');
+    });
 });
 
 Route::group(['prefix'=>'api'], function () {

@@ -56,14 +56,12 @@
                         <label>Loại sản phẩm</label>
                         <select class="form-control" name="idloaisp">
                             @foreach($dsloaisp as $loaisp)
-                                @if($loaisp -> maloaicha != null)
-                                    <option 
-                                            @if($sanpham->loaisanpham->id == $loaisp->id)
-                                                {{"selected"}}
-                                            @endif
-                                        value="{{$loaisp -> id}}">{{$loaisp -> tenloaisp}}
-                                    </option>
-                                @endif
+                                <option 
+                                        @if($sanpham->loaisanpham->id == $loaisp->id)
+                                            {{"selected"}}
+                                        @endif
+                                    value="{{$loaisp -> id}}">{{$loaisp -> tenloaisp}}
+                                </option>
                             @endforeach
                         </select>
                     </div>

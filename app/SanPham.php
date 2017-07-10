@@ -42,4 +42,9 @@ class SanPham extends Model
     {
         return $this -> hasMany('App\HinhSanPham', 'masp', 'id');
     }
+
+    public function chitietkhuyenmai()
+    {
+    	return $this -> belongsTo('App\ChiTietKhuyenMai', 'masp', 'id');
+    }
 }
